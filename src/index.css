@@ -65,3 +65,9 @@ h1 {
     grid-template-columns: 1fr;
   }
 }
+.news-box {
+width: 320px;
+}
+.news-box img {
+width: 100%;
+}

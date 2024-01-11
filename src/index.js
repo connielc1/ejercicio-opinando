@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 
-let apikey, url, articles, i;
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -12,7 +10,7 @@ root.render(
   </React.StrictMode>
 );
 
-apikey = '4aee8bf169a3e2253bd6a99cc032c153';
+/* apikey = '4aee8bf169a3e2253bd6a99cc032c153';
 url = 'https://gnews.io/api/v4/{endpoint}?apikey=API_KEY' + apikey;
 
 fetch(url)
@@ -27,4 +25,4 @@ fetch(url)
       console.log("Description: " + articles[i]['description']);
       break;
     }
-  });
+  }); */
