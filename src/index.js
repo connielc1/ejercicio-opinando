@@ -12,7 +12,7 @@ root.render(
   </React.StrictMode>
 );
 
-apikey = '518c4567a749f5b800a5f9ae3b202a18';
+apikey = '4aee8bf169a3e2253bd6a99cc032c153';
 url = 'https://gnews.io/api/v4/{endpoint}?apikey=API_KEY' + apikey;
 
 fetch(url)

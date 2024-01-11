@@ -12,25 +12,56 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 h1 {
-  text-align: center; 
-  margin-bottom: 20px; 
-  color: #867070;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #F5EBEB;
+
 }
+
+.menu-container {
+  background-color: #867070;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-filters {
+  border-radius: 5px;
+  flex-wrap: wrap;
+  flex-direction: initial;
+  display: inline-flex;
+  gap: 10px;
+}
+
+.menu-filters select,
+.menu-filters input {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
-.news-box {
-  border: 1px solid #ddd;
-  padding: 10px;
-  border-radius: 5px;
-  background-color: #D5B4B4;
+.menu-filters select {
+  margin-bottom: 10px;
 }
 
-.news-image {
-  width: 100%;
-  height: auto;
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
 }

@@ -11,7 +11,7 @@ const News = () => {
       try {
         const response = await axios.get('https://gnews.io/api/v4/top-headlines', {
           params: {
-            token: '518c4567a749f5b800a5f9ae3b202a18',
+            token: '4aee8bf169a3e2253bd6a99cc032c153',
             lang: 'es',
             category: categoryFilter,
             q: titleSearch,
@@ -36,23 +36,26 @@ const News = () => {
 
   return (
     <div>
-      <h1>Noticias</h1>
-      <div className="filters">
-        <select value={categoryFilter} onChange={(e) => handleCategoryChange(e.target.value)}>
-          <option value="">Todas las categorías</option>
-          <option value="business">Negocios</option>
-          <option value="entertainment">Entretenimiento</option>
-          <option value="health">Salud</option>
-          <option value="science">Ciencia</option>
-          <option value="sports">Deportes</option>
-          <option value="technology">Tecnología</option>
-        </select>
-        <input
-          type="text"
-          placeholder="Buscar por título"
-          value={titleSearch}
-          onChange={handleTitleSearchChange}
-        />
+      <div className="menu-container" >
+        <h1>Noticias</h1>
+        <div className="menu-filters">
+          <select value={categoryFilter} onChange={(e) => handleCategoryChange(e.target.value)}>
+            <option value="">Todas las categorías</option>
+            <option value="business">Negocios</option>
+            <option value="entertainment">Entretenimiento</option>
+            <option value="health">Salud</option>
+            <option value="science">Ciencia</option>
+            <option value="sports">Deportes</option>
+            <option value="technology">Tecnología</option>
+          </select>
+          <input
+            type="text"
+            className="search"
+            placeholder="Buscar por título"
+            value={titleSearch}
+            onChange={handleTitleSearchChange}
+          />
+        </div>
       </div>
       <div className="container">
         {news.map((article) => (

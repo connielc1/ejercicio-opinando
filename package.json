@@ -1,4 +1,5 @@
-{
+
+{  
   "name": "ejercicio-opinando",
   "version": "0.1.0",
   "private": true,
@@ -10,7 +11,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "^3.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "proxy": "https://gnews.io"
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
